@@ -1,0 +1,138 @@
+@import url('https://fonts.googleapis.com/css2?family=Kdam+Thmor+Pro&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    background-color: black;
+    list-style: none;
+    text-decoration: none;
+}
+
+header {
+    height: 90px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+nav {
+    width: 60%;
+}
+
+ul {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+
+li {
+    list-style: none;
+    color: aliceblue;
+    cursor: pointer;
+    font-size: 19px;
+    transition: .5s;
+    font-family: 'Kdam Thmor Pro', sans-serif;
+}
+
+li:hover {
+    color: #D21617;
+}
+
+#logo {
+    width: 150px;
+    height: auto;
+}
+
+.fotos-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.cards-content {
+    width: 99%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    row-gap: 20px;
+    column-gap: 40px;
+}
+
+.card {
+    width: 100%;
+    height: 450px;
+    background-size: cover;
+    background-position: 50% 50%;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 1s;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding: 0 0 20px 10px;
+}
+
+.card:hover {
+    transform: scale(1.02);
+}
+
+.image-1 {
+    background-image: url('https://maringapost.com.br/geek/wp-content/uploads/sites/29/2022/03/WhatsApp-Image-2022-03-05-at-17.14.29.jpeg');
+    }
+
+.image-2 {
+    background-image: url('https://cinemacao.com/wp-content/uploads/2022/03/batman-2-1130x590.jpg.webp');
+}
+
+.image-3 {
+    background-image: url('https://newr7-r7-prod.web.arc-cdn.net/resizer/v2/PXA52XAFDNLPFC37UCL2MZ4HWU.jpg?auth=2e39a9abc5d638d3913f3fc46a4f216e6279c1f6efbfcc812d2312a673e4e1cc&width=1500&height=844');    
+}
+
+.image-4 {
+    background-image: url('https://www.cnnbrasil.com.br/wp-content/uploads/sites/12/2022/01/batman-robert-pattinson-2022.jpg?w=1200&h=675&crop=1');
+}
+
+.image-5 {
+    background-image: url('https://s2-techtudo.glbimg.com/sAde9nifgABCIIld0wUa8af3DqI=/0x0:1366x768/888x0/smart/filters:strip_icc()/i.s3.glbimg.com/v1/AUTH_08fbf48bc0524877943fe86e43087e7a/internal_photos/bs/2023/P/e/2i7BplSCytEt1giqKdBw/the-batman-elenco.jpeg.webp');
+}
+
+.image-6 {
+    background-image: url('https://sm.ign.com/ign_br/screenshot/default/batman-robert-pattinson-filme_zy5q.png');
+}
+
+
+footer {
+    height: 300px;
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+span {
+    color: #fff;
+    font-family: 'Kdam Thmor Pro', sans-serif;
+}
+
+.footer-navigation {
+    display: none;
+}
+
+.footer-list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+@media(max-width:480px) {
+    .footer-navigation {
+        display: block;
+    }
+
+    nav {
+        display: none;
+    } 
+
+    .cards-content {
+        grid-template-columns: 1fr;
+    }
+}

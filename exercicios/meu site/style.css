@@ -1,0 +1,77 @@
+@charset "UTF-8";
+
+body{
+    background-image: linear-gradient(to top,#FFBC0E,#FFCB44 );
+    font-family: Speedee, arial, helvetica, sans-serif;
+        /*background-image: url('imagens/imagem.fundo.jpg');// serve para por imagem no fundo da tela
+        background-size: cover; 
+        background-position: center;
+        background-repeat: no-repeat;*/
+    }
+    main{
+        background-image: linear-gradient(#F6F6F6);
+    }
+
+    
+    .frase {
+        font-family:fantasy; 
+        margin:auto;
+        font-size: 70px;
+    }
+    .cor1 {
+        color:#FFFFFF; 
+    }
+    .cor2 {
+        color:#DB0007; 
+    }
+    .container {
+        margin-top: 100px;
+        text-align: center;
+        
+    }
+    .float-container{
+        margin-left: 20px;
+    }
+    h1{
+        direction: rtl; /* Right-to-Left (Direita para Esquerda) */
+        font-size: 50px;
+        text-align:right; 
+        margin-inline: 100px;
+    } 
+     .texto{
+        direction: rtl; /* Right-to-Left (Direita para Esquerda) */
+        text-align: right; 
+        margin-inline: 100px;
+    }
+
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*.float-container {
+    overflow: hidden; /* Para conter o fluxo ao redor da imagem */  /*.imagem {
+    float: left; /* Faz com que a imagem flutue para a esquerda */
+   /* width: 150px; /* Ajuste o tamanho da imagem conforme necessário */
+    /*margin-right: 15px; /* Espaço entre a imagem e o texto */
+ /* }*/
+  
+  /*.texto {
+   /* Remove a margem padrão do parágrafo, se necessário */
+
+
+

@@ -1,0 +1,149 @@
+@import url('https://fonts.googleapis.com/css2?family=Kdam+Thmor+Pro&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    background-color: black;
+    color: aliceblue;
+    list-style: none;
+    text-decoration: none;
+}
+
+header {
+    height: 90px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+nav {
+    width: 60%;
+}
+
+ul {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+
+li {
+    list-style: none;
+    color: aliceblue;
+    cursor: pointer;
+    font-size: 19px;
+    transition: .5s;
+    font-family: 'Kdam Thmor Pro', sans-serif;
+}
+
+li:hover {
+    color: #D21617;
+}
+
+#logo {
+    width: 150px;
+    height: auto;
+}
+
+.perfil-container {
+    width: 99%;
+    display: flex;
+    justify-content: center;
+}
+
+.cards-content {
+    width: 99%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    row-gap: 20px;
+    column-gap: 40px;
+    padding-top: 50px;
+}
+
+.card {
+    width: 99%;
+    height: 400px;
+    background-size: cover;
+    background-position: 50% 50%;
+    border-radius: 2px;
+    cursor: pointer;
+    transition: 1s;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #fff;
+    font-size: 16px;
+    font-family: 'Kdam Thmor Pro', sans-serif;
+    padding-top: 50px;
+    background-image: url('https://maringapost.com.br/geek/wp-content/uploads/sites/29/2022/03/WhatsApp-Image-2022-03-05-at-17.14.29.jpeg');
+
+}
+
+.card:hover {
+    transform: scale(1.02);
+}
+
+.perfil-user {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    
+}
+
+.avaliacao {
+    width: 120px;
+}
+
+p {
+    margin: 10px;
+    text-align: center;
+    font-family: 'Kdam Thmor Pro', sans-serif;
+    font-size: 18px;
+    color: #fff;
+}
+
+h3 {
+    display: block;
+    font-size: 20px;
+    margin-top: 10px;
+    font-weight: bold;
+    color: #fff;
+}
+
+footer {
+    height: 300px;
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+span {
+    color: #fff;
+    font-family: 'Kdam Thmor Pro', sans-serif;
+}
+
+.footer-navigation {
+    display: none;
+}
+
+.footer-list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+@media(max-width:480px) {
+    .footer-navigation {
+        display: block;
+    }
+
+    nav {
+        display: none;
+    } 
+
+    .cards-content {
+        grid-template-columns: 1fr;
+    }
+}
+
+
